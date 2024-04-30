@@ -1,5 +1,5 @@
 {
-  "name": "nationalid",
+  "name": "@ronaldarndt/nationalid",
   "module": "src/index.ts",
   "type": "module",
   "version": "1.0.0",
@@ -12,6 +12,7 @@
   "devDependencies": {
     "@types/bun": "latest",
     "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
     "rimraf": "^5.0.5",
     "typescript": "^5.4.5"
   },
@@ -20,6 +21,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mattlgroff/function-agents.git"
-  }
+    "url": "https://github.com/ronaldarndt/nationalid.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "national",
+    "id",
+    "identification",
+    "number",
+    "format",
+    "validate",
+    "document",
+    "SSN",
+    "CPF"
+  ],
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts"
+  ]
 }
