@@ -2,7 +2,7 @@
     "name": "@ronaldarndt/nationalid",
     "module": "src/index.ts",
     "type": "module",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Format and validate national identification numbers",
     "scripts": {
         "build": "npm version patch && bun build --target=node ./src/index.ts --outfile=dist/index.js && bun run build:declaration",
