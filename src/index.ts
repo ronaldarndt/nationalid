@@ -1,8 +1,8 @@
-import cpf from '@/countries/brazil/cpf';
-import ssn from '@/countries/us/ssn';
+import cpf from './countries/brazil/cpf';
+import ssn from './countries/us/ssn';
 
-import brazil from '@/countries/brazil';
-import us from '@/countries/us';
+import brazil from './countries/brazil';
+import us from './countries/us';
 
 import { Document, DocumentCode } from './types/general';
 
