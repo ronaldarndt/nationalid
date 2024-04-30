@@ -1,0 +1,25 @@
+{
+  "name": "nationalid",
+  "module": "src/index.ts",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Format and validate national identification numbers",
+  "scripts": {
+    "build": "bun build --target=node ./src/index.ts --outfile=dist/index.js && bun run build:declaration",
+    "build:declaration": "tsc --emitDeclarationOnly --project tsconfig.types.json",
+    "postbuild": "rimraf tsconfig.types.tsbuildinfo"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattlgroff/function-agents.git"
+  }
+}
