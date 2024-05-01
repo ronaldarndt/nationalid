@@ -7,7 +7,7 @@ on:
       - closed
 jobs:
   build-publish:
-    name: build-publish
+    name: "Buid and publish"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,7 +28,7 @@ jobs:
         if: contains(github.event.pull_request.labels.*.name, 'patch')
         run: npm version patch
       - name: Git push version bump
-        run: git push origin dev --follow-tags --force
+        run: git push origin main --follow-tags --force
       - id: set-version
         name: Output version change
         run: npm pkg get version
