@@ -1,5 +1,5 @@
-type CountryCode = 'BR' | 'US';
-type DocumentCode = 'CPF' | 'SSN';
+type CountryCode = 'br' | 'us';
+type DocumentCode = 'cpf' | 'ssn';
 
 interface Document {
     name: string;

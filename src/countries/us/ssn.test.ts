@@ -3,7 +3,7 @@ import ssn from './ssn';
 
 describe('ssn', () => {
     it('has correct metadata', () => {
-        expect(ssn.code).toBe('SSN');
+        expect(ssn.code).toBe('ssn');
         expect(ssn.digits).toBe(9);
         expect(ssn.name).toBe('Social Security Number');
         expect(ssn.mask).toEqual([

@@ -1,7 +1,7 @@
 import { Document } from '@/types/general';
 
 const ssn = {
-    code: 'SSN',
+    code: 'ssn',
     digits: 9 as const,
     mask: [/\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/, /\d/],
     name: 'Social Security Number',

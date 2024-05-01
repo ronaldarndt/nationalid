@@ -2,10 +2,10 @@ import { Country } from '@/types/general';
 import cpf from './cpf';
 
 const brazil = {
-    code: 'BR',
+    code: 'br',
     name: 'Brazil',
     documents: {
-        CPF: cpf,
+        cpf,
     },
 } satisfies Country;
 

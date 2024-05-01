@@ -2,10 +2,10 @@ import { Country } from '@/types/general';
 import ssn from './ssn';
 
 const us = {
-    code: 'US',
+    code: 'us',
     name: 'United States',
     documents: {
-        SSN: ssn,
+        ssn,
     },
 } satisfies Country;
 
