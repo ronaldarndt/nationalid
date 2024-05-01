@@ -6,8 +6,6 @@ import us from '@/countries/us';
 
 import { Document, DocumentCode } from '@/types/general';
 
-// TODO: remove this comment
-
 const allDocuments = [brazil, us]
     .map((x) => x.documents)
     .reduce(
