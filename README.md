@@ -1,5 +1,7 @@
 # nationalid
 
+Format and validate national identification numbers
+
 To install dependencies:
 
 ```bash
