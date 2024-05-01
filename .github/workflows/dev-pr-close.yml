@@ -1,4 +1,4 @@
-name: publish workflow
+name: 'Dev - PR Close'
 on:
   pull_request:
     branches:
