@@ -1,0 +1,25 @@
+name: publish workflow
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build-publish:
+    name: build-publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
+      - name: 'change version'
+        uses: reedyuk/npm-version@1.1.1
+        with:
+          version: '1.2.2'
+          git-tag-version: 'true'
+      - run: bun install
+      - run: bun run build
+      - run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
