@@ -2,11 +2,11 @@
     "name": "@ronaldarndt/nationalid",
     "module": "src/index.ts",
     "type": "module",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "Format and validate national identification numbers",
     "scripts": {
-        "build": "npm version patch && bun build --target=node ./src/index.ts --outfile=dist/index.js && bun run build:declaration",
-        "build:declaration": "tsc --emitDeclarationOnly --project tsconfig.types.json",
+        "build": "npm version patch --no-git-tag-version && bun build --target=node ./src/index.ts --outfile=dist/index.js && bun run build:declaration",
+        "build:declaration": "tspc --emitDeclarationOnly --project tsconfig.types.json",
         "postbuild": "rimraf tsconfig.types.tsbuildinfo"
     },
     "devDependencies": {
@@ -14,7 +14,9 @@
         "prettier": "^3.2.5",
         "prettier-plugin-organize-imports": "^3.2.4",
         "rimraf": "^5.0.5",
-        "typescript": "^5.4.5"
+        "ts-patch": "^3.1.2",
+        "typescript": "^5.4.5",
+        "typescript-transform-paths": "^3.4.7"
     },
     "peerDependencies": {
         "typescript": "^5.0.0"
